@@ -42,3 +42,11 @@
 .phone-frame{height:auto;min-height:0;aspect-ratio:71.5/149.6}
 @media(min-width:601px) and (max-height:1000px){.phone-frame{width:285px}}
 @media(min-width:601px) and (max-height:820px){.phone-frame{width:235px}}
+.phone-screen{padding-bottom:88px;overflow-x:hidden;scrollbar-width:none}
+.phone-screen::-webkit-scrollbar{display:none}
+.phone-hardware-top{height:33px;left:21px;right:21px;padding:0 4px;background:#fff;border-radius:28px 28px 0 0}
+.ios-compose{z-index:5;background:#fff}
+.intro-paging{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.intro-paging span{grid-column:1/-1;grid-row:1;text-align:center}
+.intro-paging [data-action="example-prev"]{grid-column:1;grid-row:2;justify-self:start}
+.intro-paging [data-action="example-next"],.intro-paging [data-action="go-task1"]{grid-column:2;grid-row:2;justify-self:end;white-space:nowrap}
