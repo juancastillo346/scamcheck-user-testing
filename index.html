@@ -6,13 +6,22 @@
     <meta name="theme-color" content="#f4f7fb" />
     <meta name="description" content="ScamCheck usability prototype." />
     <title>ScamCheck</title>
-    <link rel="stylesheet" href="./styles.css?v=4" />
+    <link rel="stylesheet" href="./styles.css?v=5" />
   </head>
   <body>
     <main class="app-shell">
       <header class="topbar">
         <a class="brand" href="#intro"><span class="brand-mark">✓</span> ScamCheck</a>
-        <span class="prototype-label">PROTOTYPE</span>
+        <div class="topbar-tools">
+          <span class="prototype-label" id="prototype-label">PROTOTYPE</span>
+          <label class="visually-hidden" for="language-select" id="language-label">Language</label>
+          <select id="language-select" class="language-select" aria-label="Language">
+            <option value="en">English</option>
+            <option value="zh-HK">廣東話</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="es">Español</option>
+          </select>
+        </div>
       </header>
       <nav class="task-tabs" aria-label="Study tasks">
         <a href="#intro" data-tab="intro">Intro</a>
@@ -44,6 +53,7 @@
       <footer class="footer-note">ScamCheck is a prototype. It only analyzes the sample text shown here.</footer>
     </main>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script src="./app.js"></script>
+    <script src="./translations.js?v=1"></script>
+    <script src="./app.js?v=2"></script>
   </body>
 </html>
