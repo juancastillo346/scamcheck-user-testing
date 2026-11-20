@@ -70,7 +70,7 @@
     if(a==="detail-back"){state.view="result";state.detail=null;renderScreen();return;}
     if(a==="back-messages"||a==="back-nav"){state.view="messages";renderScreen();return;}
   });
-  languageSelect.addEventListener("change",()=>{state.locale=languageSelect.value;state.copied=false;state.pasted=false;render();});
+  languageSelect.addEventListener("change",()=>{state.locale=languageSelect.value;state.copied=false;state.pasted=false;clearTimeout(state.toastTimer);toastBox.classList.remove("show");toastBox.textContent="";render();});
   window.addEventListener("hashchange",()=>{const page=location.hash.slice(1);if(["intro","task1","task2","task3"].includes(page)){state.page=page;state.example=0;state.view="messages";state.copied=false;state.pasted=false;state.detail=null;state.truthReveal=false;render();}});
   render();
 })();
