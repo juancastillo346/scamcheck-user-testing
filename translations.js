@@ -51,7 +51,7 @@ window.SCAMCHECK_I18N = {
         indicators: [["Liên kết đáng ngờ", "Trang web không dùng tên miền chính thức của USPS."], ["Yêu cầu thông tin cá nhân", "Tin nhắn yêu cầu bạn xác nhận địa chỉ giao hàng trên một trang web khác."], ["Yêu cầu giao hàng bất thường", "Tin nhắn yêu cầu bạn sửa thông tin qua liên kết thay vì xác minh qua kênh USPS chính thức."]],
         explainTitle: "Vì sao tin nhắn này đáng ngờ", explanation: [["Trang web đáng ngờ", "Liên kết không dẫn đến trang web USPS chính thức."], ["Yêu cầu địa chỉ", "Tin nhắn yêu cầu bạn nhập hoặc xác nhận thông tin giao hàng cá nhân."], ["Không giống thông báo theo dõi của USPS", "Thông báo theo dõi qua tin nhắn của USPS do khách hàng chủ động đăng ký và thường không kèm liên kết yêu cầu sửa thông tin giao hàng."]],
         steps: [["Đừng trả lời hoặc mở liên kết", ""], ["Truy cập trực tiếp USPS", "Tự nhập usps.com vào trình duyệt."], ["Kiểm tra thông tin theo dõi", "Dùng mã theo dõi hoặc trang đơn hàng của cửa hàng để kiểm tra lô hàng."], ["Xóa hoặc báo cáo", "Xóa hoặc báo cáo tin nhắn đáng ngờ."]],
-        learn: [["Kiểm tra chính xác địa chỉ web", "Tên công ty xuất hiện trong URL không có nghĩa trang web đó thực sự thuộc về công ty."], ["Cẩn thận với vấn đề giao hàng", "Tin nhắn nói bạn cần sửa địa chỉ, phí bưu chính hoặc thông tin giao hàng thường là dấu hiệu lừa đảo."], ["Tự xác minh riêng", "Dùng trang web hoặc ứng dụng chính thức của đơn vị vận chuyển thay vì mở liên kết trong tin nhắn."]],
+        learn: [["Kiểm tra chính xác địa chỉ web", "Tên công ty xuất hiện trong địa chỉ trang web không có nghĩa trang web đó thực sự thuộc về công ty."], ["Cẩn thận với vấn đề giao hàng", "Tin nhắn nói bạn cần sửa địa chỉ, phí bưu chính hoặc thông tin giao hàng thường là dấu hiệu lừa đảo."], ["Tự xác minh riêng", "Dùng trang web hoặc ứng dụng chính thức của đơn vị vận chuyển thay vì mở liên kết trong tin nhắn."]],
         reinforcement: "Bạn đang học cách nhận biết tin nhắn lừa đảo."
       }
     }
@@ -107,7 +107,7 @@ window.SCAMCHECK_I18N = {
         indicators: [["Enlace sospechoso", "El sitio web no usa el dominio oficial de USPS."], ["Pide información personal", "El mensaje te pide confirmar tu dirección de entrega en otro sitio web."], ["Solicitud de entrega inusual", "El mensaje te pide corregir los datos mediante un enlace en vez de verificarlo por los canales oficiales de USPS."]],
         explainTitle: "Por qué parece sospechoso", explanation: [["Sitio web sospechoso", "El enlace no lleva a un sitio web oficial de USPS."], ["Pide la dirección", "El mensaje te pide ingresar o confirmar información personal de entrega."], ["No coincide con las alertas normales de USPS", "Las notificaciones de seguimiento por mensaje de USPS las inicia el cliente y normalmente no incluyen enlaces para corregir datos de entrega."]],
         steps: [["No respondas ni abras el enlace", ""], ["Ve directamente a USPS", "Escribe usps.com en el navegador."], ["Revisa el seguimiento", "Usa el número de seguimiento o la página del pedido de la tienda para consultar el envío."], ["Elimina o reporta", "Elimina o reporta el mensaje sospechoso."]],
-        learn: [["Revisa la dirección web exacta", "Que el nombre de una empresa aparezca en una URL no significa que el sitio realmente le pertenezca."], ["Ten cuidado con problemas de entrega", "Los mensajes que dicen que debes corregir una dirección, el franqueo o los datos de entrega suelen ser estafas."], ["Verifica por separado", "Usa el sitio o la aplicación oficial de la empresa de mensajería en vez de abrir un enlace del mensaje."]],
+        learn: [["Revisa la dirección web exacta", "Que el nombre de una empresa aparezca en una dirección web no significa que el sitio realmente le pertenezca."], ["Ten cuidado con problemas de entrega", "Los mensajes que dicen que debes corregir una dirección, el franqueo o los datos de entrega suelen ser estafas."], ["Verifica por separado", "Usa el sitio o la aplicación oficial de la empresa de mensajería en vez de abrir un enlace del mensaje."]],
         reinforcement: "Estás aprendiendo a reconocer estafas."
       }
     }
@@ -138,7 +138,7 @@ window.SCAMCHECK_I18N = {
       { context: "你今個星期初在網上買了東西，知道貨品已寄出，但不記得由哪間速遞公司派送。", text: "UPS：我們未能核實你包裹的送貨地址。請於今晚 8 時前確認地址，以免延誤送貨：ups-delivery-status.com" },
       { context: "你預計今日會收到一個 Amazon 包裹。", text: "Amazon：由於無法確認你的地址，包裹派送已暫停。你需要在今日支付 1.49 美元重新派送費。請在此更新送貨資料：amazon-delivery-help.com" },
       { context: "你今個星期初在網上買了東西，知道貨品已寄出，但不記得由哪間速遞公司派送。", text: "UPS：你的包裹預計明日送達。你可在 https://www.ups.com/track 追蹤或管理派送。" },
-      { context: "你兩日前在 Amazon 下單，預計包裹今日送達。", text: "Amazon：你的包裹正在派送。請在 Amazon App 查看最新送貨狀態。" },
+      { context: "你兩日前在 Amazon 下單，預計包裹今日送達。", text: "Amazon：你的包裹正在派送。請在 Amazon 應用程式查看最新送貨狀態。" },
       { context: "你今個星期初在一間小型網店買了東西，但不記得由哪間速遞公司派送。", text: "USPS：我們未能完成派送，因為無法核實你送貨地址的門牌號碼。請確認送貨地址：usps-address-check.com" }
     ],
     tasks: {
@@ -146,7 +146,7 @@ window.SCAMCHECK_I18N = {
         result: "好可能係詐騙", subtitle: "我哋發現訊息有常見詐騙警號。",
         indicators: [["催促你盡快行動", "訊息要求你在晚上 8 時前回覆。"], ["可疑連結", "連結並非使用 UPS 官方網域 ups.com。"], ["索取個人資料", "訊息要求你透過連結確認送貨地址。"]],
         explainTitle: "點解呢個訊息似乎可疑", explanation: [["製造急切感", "訊息設定限時，可能令你未仔細查證就急於行動。"], ["可疑連結", "UPS 官方連結會使用 ups.com 網域，訊息內的網站並非如此。"], ["索取資料", "訊息引導你到另一個網站確認送貨地址。"]],
-        steps: [["唔好回覆或開啟連結", ""], ["自行核實", "開啟 UPS App，或在瀏覽器直接輸入 ups.com。"], ["查閱貨件", "到 UPS 官方網站或你購物的商店查找包裹。"], ["刪除或舉報", "如果訊息屬詐騙，請刪除或舉報。"]],
+        steps: [["唔好回覆或開啟連結", ""], ["自行核實", "開啟 UPS 應用程式，或在瀏覽器直接輸入 ups.com。"], ["查閱貨件", "到 UPS 官方網站或你購物的商店查找包裹。"], ["刪除或舉報", "如果訊息屬詐騙，請刪除或舉報。"]],
         learn: [["催促你盡快行動", "詐騙訊息經常設定限時或威脅後果，令你未思考清楚就採取行動。"], ["連結與公司不相符", "仔細查看完整網址，不要只看訊息中提到的公司名稱。"], ["索取個人資料", "如果送貨短訊要求輸入地址、付款資料、密碼或其他個人資料，請提高警覺。"]],
         reinforcement: "你正在學習識別送貨詐騙。"
       },
@@ -154,7 +154,7 @@ window.SCAMCHECK_I18N = {
         result: "好可能係可信訊息", subtitle: "我哋未有在此訊息中發現常見詐騙警號。",
         indicators: [["官方網站", "連結使用 UPS 官方網域 ups.com。"], ["沒有索取敏感資料", "訊息沒有索取密碼、付款資料或其他敏感資料。"], ["沒有異常催促", "訊息只提供一般送貨通知，沒有威脅即時後果。"]],
         explainTitle: "點解呢個訊息似乎可信", explanation: [["UPS 官方網站", "連結指向 UPS 官方網域 ups.com。"], ["沒有催促你即時行動", "訊息提供送貨通知，沒有設定帶有威脅的限時。"], ["沒有索取敏感資料", "訊息沒有索取密碼、付款資料、社會安全號碼或其他敏感資料。"]],
-        steps: [["你毋須回覆此訊息", ""], ["如有疑問，先行核實", "開啟 UPS App，或在瀏覽器直接輸入 ups.com。"], ["查閱包裹", "在 UPS 帳戶或購物商店確認送貨資料。"], ["避免不必要風險", "如不確定連結是否安全，請自行開啟公司的官方 App 或網站。"]],
+        steps: [["你毋須回覆此訊息", ""], ["如有疑問，先行核實", "開啟 UPS 應用程式，或在瀏覽器直接輸入 ups.com。"], ["查閱包裹", "在 UPS 帳戶或購物商店確認送貨資料。"], ["避免不必要風險", "如不確定連結是否安全，請自行開啟公司的官方應用程式或網站。"]],
         learn: [["官方網站", "確認網站是否真的屬於該公司。"], ["沒有施加壓力", "一般送貨通知通常不會威脅你立即採取行動。"], ["沒有索取敏感資料", "送貨通知通常不應透過短訊索取密碼或財務資料。"]],
         reinforcement: "你正在學習識別較安全的訊息。"
       },
@@ -163,7 +163,7 @@ window.SCAMCHECK_I18N = {
         indicators: [["可疑連結", "網站並非使用 USPS 官方網域。"], ["索取個人資料", "訊息要求你在另一個網站確認送貨地址。"], ["不尋常的送貨要求", "訊息要求你透過連結更正資料，而非透過 USPS 官方渠道核實。"]],
         explainTitle: "點解呢個訊息似乎可疑", explanation: [["可疑網站", "連結並非指向 USPS 官方網站。"], ["索取地址", "訊息要求你輸入或確認個人送貨資料。"], ["與 USPS 一般短訊追蹤通知不符", "USPS 短訊追蹤通知通常由客戶主動申請，亦一般不會附上要求修正送貨資料的連結。"]],
         steps: [["唔好回覆或開啟連結", ""], ["直接前往 USPS 網站", "在瀏覽器自行輸入 usps.com。"], ["查閱追蹤資料", "使用追蹤編號或商店的訂單頁面查閱貨件。"], ["刪除或舉報", "刪除或舉報可疑訊息。"]],
-        learn: [["核對完整網址", "網址中出現公司名稱，不代表該網站真的屬於該公司。"], ["小心處理送貨問題", "聲稱地址、郵資或送貨資料需要修正的訊息，是常見詐騙手法。"], ["另外核實", "請使用速遞公司的官方網站或 App，不要點擊訊息中的連結。"]],
+        learn: [["核對完整網址", "網址中出現公司名稱，不代表該網站真的屬於該公司。"], ["小心處理送貨問題", "聲稱地址、郵資或送貨資料需要修正的訊息，是常見詐騙手法。"], ["另外核實", "請使用速遞公司的官方網站或應用程式，不要點擊訊息中的連結。"]],
         reinforcement: "你正在學習識別詐騙訊息。"
       }
     }
